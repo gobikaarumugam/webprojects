@@ -1,0 +1,425 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+}
+
+.app {
+  min-height: 100vh;
+  background: #f4f6f9;
+  color: #222;
+  transition: 0.3s;
+}
+
+.dark {
+  background: #181a1b;
+  color: white;
+}
+
+/* NAVBAR */
+
+.navbar {
+  background: #4f46e5;
+  color: white;
+  padding: 18px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar h1 {
+  font-size: 28px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.nav-links button {
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.nav-links button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.theme-btn {
+  font-size: 18px !important;
+}
+
+/* COMMON */
+
+.page {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 50px 0;
+  min-height: 650px;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 30px;
+}
+
+/* HOME */
+
+.hero {
+  text-align: center;
+  padding: 80px 20px 50px;
+}
+
+.hero h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 650px;
+  margin: auto;
+  line-height: 1.7;
+}
+
+.main-btn {
+  margin-top: 30px;
+  padding: 13px 30px;
+  border: none;
+  background: #4f46e5;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.feature-card {
+  background: white;
+  padding: 30px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.feature-card span {
+  font-size: 40px;
+}
+
+.feature-card h3 {
+  margin: 15px 0;
+}
+
+.feature-card p {
+  color: #666;
+}
+
+/* TODO */
+
+.todo-container {
+  max-width: 750px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  font-size: 16px;
+}
+
+.input-area button {
+  padding: 14px 22px;
+  border: none;
+  background: #4f46e5;
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.task-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.task-left input {
+  width: 18px;
+  height: 18px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.delete-btn {
+  border: none;
+  background: #ef4444;
+  color: white;
+  padding: 8px 13px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.empty {
+  text-align: center;
+  color: #888;
+}
+
+/* CALENDAR */
+
+.calendar {
+  max-width: 750px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.calendar-header button {
+  border: none;
+  background: #4f46e5;
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.weekdays,
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 7px;
+}
+
+.weekdays div {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.day,
+.empty-day {
+  min-height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+}
+
+.day {
+  background: #f1f3f7;
+  cursor: pointer;
+}
+
+.day:hover {
+  background: #ddd;
+}
+
+.today {
+  background: #4f46e5;
+  color: white;
+  font-weight: bold;
+}
+
+/* DASHBOARD */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.stat-card {
+  background: white;
+  padding: 35px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.stat-card h3 {
+  font-size: 40px;
+  color: #4f46e5;
+}
+
+.stat-card p {
+  margin-top: 10px;
+  color: #666;
+}
+
+.progress-box {
+  margin: 40px auto;
+  max-width: 700px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.progress {
+  width: 100%;
+  height: 20px;
+  background: #ddd;
+  border-radius: 20px;
+  margin: 20px 0 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #4f46e5;
+  transition: 0.4s;
+}
+
+/* ABOUT */
+
+.about-card {
+  max-width: 750px;
+  margin: auto;
+  background: white;
+  padding: 35px;
+  border-radius: 12px;
+  line-height: 1.8;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.about-card h2 {
+  margin-bottom: 15px;
+}
+
+.about-card h3 {
+  margin-top: 20px;
+}
+
+.about-card ul {
+  margin: 10px 0 10px 25px;
+}
+
+/* FOOTER */
+
+footer {
+  background: #111827;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* DARK MODE */
+
+.dark .feature-card,
+.dark .todo-container,
+.dark .calendar,
+.dark .stat-card,
+.dark .progress-box,
+.dark .about-card {
+  background: #242628;
+  color: white;
+}
+
+.dark .feature-card p,
+.dark .stat-card p {
+  color: #bbb;
+}
+
+.dark .input-area input {
+  background: #333;
+  color: white;
+  border-color: #555;
+}
+
+.dark .day {
+  background: #333;
+}
+
+.dark .day:hover {
+  background: #444;
+}
+
+.dark .task {
+  border-color: #444;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .features,
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h2 {
+    font-size: 35px;
+  }
+
+  .input-area {
+    flex-direction: column;
+  }
+
+  .calendar {
+    padding: 15px;
+  }
+
+  .day,
+  .empty-day {
+    min-height: 45px;
+  }
+}

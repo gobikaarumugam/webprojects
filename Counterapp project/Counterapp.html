@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Counter App</title>
+
+<style>
+body{
+    font-family: Arial;
+    background-color: lightblue;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0px 0px 10px gray;
+}
+
+h1{
+    color:blue;
+}
+
+#count{
+    font-size:50px;
+    margin:20px;
+}
+
+button{
+    padding:10px 20px;
+    margin:5px;
+    font-size:18px;
+    cursor:pointer;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>Counter App</h1>
+
+<h2 id="count">0</h2>
+
+<button onclick="minus()">-</button>
+<button onclick="reset()">Reset</button>
+<button onclick="plus()">+</button>
+
+</div>
+
+<script>
+
+let value = 0;
+
+function plus(){
+    value++;
+    document.getElementById("count").innerHTML = value;
+}
+
+function minus(){
+    value--;
+    document.getElementById("count").innerHTML = value;
+}
+
+function reset(){
+    value = 0;
+    document.getElementById("count").innerHTML = value;
+}
+
+</script>
+
+</body>
+</html>

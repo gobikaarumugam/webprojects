@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f7fb;
+  color: #222;
+}
+
+/* NAVBAR */
+
+.navbar {
+  height: 70px;
+  background: #172554;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  background: #2563eb;
+}
+
+.nav-links .active {
+  background: #3b82f6;
+}
+
+/* PAGE */
+
+.page {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.page h1 {
+  text-align: center;
+  color: #172554;
+  margin-bottom: 30px;
+}
+
+/* HOME */
+
+.hero {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #555;
+  font-size: 18px;
+}
+
+.home-cards {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.card a {
+  display: inline-block;
+  text-decoration: none;
+  background: #2563eb;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+
+/* PROFILE */
+
+.profile-box {
+  background: white;
+  max-width: 650px;
+  margin: auto;
+  padding: 35px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.profile-icon {
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+
+.profile-box h2 {
+  color: #172554;
+  margin-bottom: 25px;
+}
+
+.profile-details {
+  text-align: left;
+  line-height: 2;
+}
+
+/* STUDENT SUMMARY */
+
+.student-summary {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.student-summary p {
+  margin: 7px 0;
+}
+
+/* TABLE */
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+th {
+  background: #172554;
+  color: white;
+  padding: 15px;
+}
+
+td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background: #f1f5f9;
+}
+
+.pass {
+  color: green;
+  font-weight: bold;
+}
+
+.fail {
+  color: red;
+  font-weight: bold;
+}
+
+.result-box {
+  margin-top: 25px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.result-box h3 {
+  margin: 8px;
+}
+
+/* YEAR COUNT */
+
+.year-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.year-card {
+  background: white;
+  padding: 25px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.year-card h2 {
+  color: #172554;
+  margin-bottom: 10px;
+}
+
+.year-card h3 {
+  margin-bottom: 15px;
+}
+
+.completed {
+  color: green;
+  font-weight: bold;
+}
+
+.current {
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.upcoming {
+  color: orange;
+  font-weight: bold;
+}
+
+.count-box {
+  background: white;
+  margin-top: 30px;
+  padding: 25px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.count-box h2 {
+  color: #172554;
+  margin-bottom: 15px;
+}
+
+.count-box h3 {
+  margin: 8px;
+}
+
+/* ADMIN */
+
+.admin-box {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.admin-box h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #172554;
+}
+
+.admin-box label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 7px;
+  font-weight: bold;
+}
+
+.admin-box input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.admin-box button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 13px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.admin-box button:hover {
+  background: #172554;
+}
+
+.success-message {
+  margin-top: 20px;
+  text-align: center;
+  color: green;
+  font-weight: bold;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .home-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .year-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .navbar {
+    padding: 0 3%;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    height: auto;
+    padding: 15px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .home-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .year-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+}
+
+.app {
+  min-height: 100vh;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.app h1 {
+  font-size: 38px;
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #64748b;
+  margin-bottom: 35px;
+}
+
+/* Card Container */
+
+.hobby-container {
+  max-width: 1100px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* Hobby Card */
+
+.hobby-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hobby-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Image */
+
+.hobby-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Card Content */
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h2 {
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  color: #475569;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .hobby-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .hobby-container {
+    grid-template-columns: 1fr;
+  }
+
+  .app h1 {
+    font-size: 30px;
+  }
+}
